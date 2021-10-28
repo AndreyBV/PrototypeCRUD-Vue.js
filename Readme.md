@@ -74,16 +74,6 @@ The peculiarity of the developed system is that it is not rigidly bound to the s
 
 ---
 
-## Tools
-
-|               |     Server     |    Client     |
-| :------------ | :------------: | :-----------: |
-| **Framework** |    Node.js     |    Vue.js     |
-| **Directory** |     /sp_be     |    /sp_fe     |
-| **Run**       | node server.js | npm run serve |
-
----
-
 ## Work example
 
 ### Login page
