@@ -12,6 +12,25 @@ The peculiarity of the developed system is that it is not rigidly bound to the s
 
 ---
 
+## Initialization
+
+1. [Download this repository](https://github.com/AndreyBV/PrototypeCRUD-Vue.js/archive/refs/heads/master.zip);
+1. [Download and install **Node.js**](https://nodejs.org/en/) (during installation you can use [this manual](https://winitpro.ru/index.php/2019/10/25/ustanovka-nastrojka-postgresql-v-windows/));
+1. [Download and install **PostgreSQL**](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads);
+1. After installing **Node.js** and **PostgreSQL** restart your computer;
+1. Open the file **"env.js"** of the downloaded project in the following path **"PrototypeCRUD-Vue.js-master\sp_be\config\env.js"**;
+1. Change the contents of the **"env.js"** file according to your PostgreSQL settings;
+1. Create an empty PostgreSQL database with the name **"crudvue** (if you did not change the **"database"** field in the **"env.js"** file) or write the name you specified in the step above;
+1. Open the **"sp_be"** directory of the downloaded project through the console;
+1. In the console that opens, execute the command: `node server.js`;
+1. As a result, the server part of the system should start (the result of the ORM Sequelize operation will also be displayed in the console, the previously created database should be automatically filled with data in accordance with the designed model);
+1. In a new console open the **"sp_fe"** directory of the downloaded project;
+1. In the console that opens, run the command: `npm run serve`;
+1. As a result, the client part of the system should start;
+1. Run the project at [http://localhost:8080/](http://localhost:8080/);
+
+---
+
 ## Architecture
 
 ### Full-stack
@@ -26,7 +45,9 @@ The peculiarity of the developed system is that it is not rigidly bound to the s
 
 <img src="./_documentation/Client-architecture.png?raw=true" alt="Page on mobile"  width=600px height="auto"/>
 
----
+### Database
+
+<img src="./_documentation/database.png?raw=true" alt="Page on mobile"  width=100% height="auto"/>
 
 ## Structure project
 
@@ -55,11 +76,11 @@ The peculiarity of the developed system is that it is not rigidly bound to the s
 
 ## Tools
 
-|               |    Server     |    Client     |
-| :------------ | :-----------: | :-----------: |
-| **Framework** |    Node.js    |    Vue.js     |
-| **Directory** |    /sp_be     |    /sp_fe     |
-| **Run**       | npm run babel | npm run serve |
+|               |     Server     |    Client     |
+| :------------ | :------------: | :-----------: |
+| **Framework** |    Node.js     |    Vue.js     |
+| **Directory** |     /sp_be     |    /sp_fe     |
+| **Run**       | node server.js | npm run serve |
 
 ---
 
@@ -80,7 +101,3 @@ The peculiarity of the developed system is that it is not rigidly bound to the s
 ### Modal window
 
 ## <img src="./_documentation/Edit-note-modal-window.png?raw=true" alt="Page on mobile"  width=400px height="auto"/>
-
----
-
-## Testing App Vue.js
